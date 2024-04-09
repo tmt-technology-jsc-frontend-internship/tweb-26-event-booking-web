@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên hệ </title>
+</head>
+
+<body class="w-screen h-full overflow-x-hidden font-utm relative bg-background">
+    <!-- header trang chủ -->
+    <header>
+        <div class="w-full fixed top-0 z-50 bg-background">
+            <div class="relative mx-auto md:max-w-7xl">
+                <div class="py-3.5 px-4 w-full lg:px-2 2xl:px-0">
+                    <nav class="w-full flex items-center justify-between">
+                        <div>
+                            <a href="./index.html"><img src="../img/header-footer/logo.png" alt=""
+                                    class="h-9 w-[138px] object-contain"></a>
+                        </div>
+                        <ul
+                            class="absolute left-0 top-0 z-50 w-full min-h-screen pl-4 bg-background text-body-2 text-neutral-1-700 font-normal hidden flex-col gap-6 
+                        xl:gap-[34px] xl:pl-0 xl:pr-2.5 xl:w-auto xl:min-h-[62px] xl:flex-row xl:flex xl:items-center xl:static">
+                            <div class="w-full flex justify-end px-4 pt-3.5 xl:hidden">
+                                <div class="close-btn text-[40px] leading-10 text-neutral-2-300 cursor-pointer">&#10005;</div>
+                            </div>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./index.html"
+                                    class="w-full relative xl:text-center">Trang chủ</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./event.html"
+                                    class="w-full relative xl:text-center">Sự kiện</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./library.html"
+                                    class="w-full relative xl:text-center">Thư viện</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./blog.html"
+                                    class="w-full relative xl:text-center">Bài viết</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./contact.html"
+                                    class="w-full relative xl:text-center current-page">Liên hệ</a></li>
+                            <li class="h-full flex items-center xl:hidden">
+                                <div class="login-btn outline-button color-outline pl-[10.2px] pr-[4.2px] py-[2.2px]">
+                                    <button type="button"
+                                        class="outline-button bg-transparent py-3.5 pl-[69px] pr-[68px] text-white text-body-3 font-bold font-vl"><span></span>
+                                        <div class="relative z-10">Đăng nhập</div>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div
+                            class="login-btn outline-button color-outline pl-[10.2px] pr-[4.2px] py-[2.2px] hidden xl:block">
+                            <button type="button"
+                                class="outline-button bg-transparent py-3.5 pl-[69px] pr-[68px] text-white text-body-3 font-bold font-vl"><span></span>
+                                <div class="relative z-10">Đăng nhập</div>
+                            </button>
+                        </div>
+                        <button type="button" class="toggle-btn twi-26-menu-fill relative z-20 cursor-pointer 
+                            text-neutral-2-300 rounded-lg w-auto h-auto text-[40px] leading-10 
+                            flex items-center justify-center xl:hidden">
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="w-full overflow-x-hidden">
+            <div class="w-full relative h-auto mt-[68px] xl:mt-[90px]"></div>
+            <div class="w-full bg-contact bg-cover bg-center bg-no-repeat">
+                <div class="w-full bg-r-gradient from-background/70 to-background">
+                    <div class="w-full relative mx-auto xl:max-w-[1920px]">
+                        <div class="relative w-full h-full z-20">
+                            <div class="w-full mx-auto xl:max-w-7xl">
+                                <div class="w-full px-4 pt-10 pb-20 flex flex-col items-center gap-8 md:pt-[109px] md:gap-10 lg:px-2 xl:flex-row xl:pt-20 xl:pb-[148px] xl:gap-16 2xl:px-0">
+                                    <div class="w-full text-white md:pb-[45px] xl:pt-0 xl:pb-[60px]">
+                                        <div class="w-fit mx-auto flex flex-col gap-10 text-white relative">
+                                            <div class="w-full flex items-center justify-center relative">
+                                                <div data-before="Thời gian sự kiện sắp xảy ra" class="layered-heading layered-down-4 layered-no-underline 
+                                                pr-2 text-center">Thời gian sự kiện <br class="md:hidden">sắp <br
+                                                        class="hidden md:block">xảy ra</div>
+                                            </div>
+                                            <div class="font-vl flex flex-col items-center gap-6 md:flex-row relative">
+                                                <div class="w-full flex items-center justify-center md:w-fit">
+                                                    <div class="flex flex-col gap-6 items-center">
+                                                        <div class="text-title-3 font-bold text-center">Ngày</div>
+                                                        <div id="dayEvent"
+                                                            class="time-card text-heading-4 font-bold">02</div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex gap-6">
+                                                    <div class="flex flex-col gap-6 items-center">
+                                                        <div class="text-title-3 font-bold text-center">Giờ</div>
+                                                        <div id="hourEvent"
+                                                            class="time-card text-heading-4 font-bold">04</div>
+                                                    </div>
+                                                    <div class="flex flex-col gap-6 items-center">
+                                                        <div class="text-title-3 font-bold text-center">Phút</div>
+                                                        <div id="minuteEvent"
+                                                            class="time-card text-heading-4 font-bold">20</div>
+                                                    </div>
+                                                    <div class="flex flex-col gap-6 items-center">
+                                                        <div class="text-title-3 font-bold text-center">Giây</div>
+                                                        <div id="secondEvent"
+                                                            class="time-card text-heading-4 font-bold">49</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="absolute -top-[5px] -left-20 md:-left-20 md:-top-8 -z-10"><img src="../img/header-footer/dots.png" alt=""></div>
+                                            <div class="absolute -bottom-14 -right-[90px] md:-right-[75px] -z-20"><img src="../img/header-footer/dots.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full relative mt-7 px-0 md:mt-0 md:px-[77px] xl:px-0">
+                                        <div class="absolute w-full z-40 top-0 left-1/2 -translate-x-1/2 px-8">
+                                            <div class="aspect-dj-form relative w-full h-full overflow-hidden mx-auto max-w-[431px]">
+                                                <div class="aspect-dj-form-inner relative w-full">
+                                                    <img src="../img/home/dj-contact.png" alt=""
+                                                        class="dj-img w-full h-full object-contain absolute top-0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="drop-shadow-[0_0_15px_rgba(255,255,255,.1)]">
+                                            <div class="custom-form-background form-outline relative z-0 mx-auto w-full max-w-[628px] xl:min-w-[628px]">
+                                                <div class="custom-form-background ticket-form-out text-white">
+                                                    <div class="color-outline-form">
+                                                        <div class="w-full flex items-start justify-center gap-2.5 p-2.5 bg-background rounded">
+                                                            <div class="w-[32px] md:w-10">
+                                                                <img src="../img/header-footer/logo-icon.png"
+                                                                    alt="" class="w-full"></div>
+                                                            <div class="font-vl font-bold text-title-3 md:text-title-6 text-center pr-5">
+                                                                Thông tin đăng kí vé <br>tại đây
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <form action="" class="custom-form-background ticket-form-in">
+                                                        <div class="w-full flex flex-col md:flex-row gap-8">
+                                                            <div class="w-full md:w-[45%] input-container">
+                                                                <div class="inner-container">
+                                                                    <label for="fullName">Họ & tên</label>
+                                                                    <input type="text" name="fullName" id="fullname"
+                                                                        placeholder="Nhập họ và tên">
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-full md:w-[55%] input-container">
+                                                                <div class="inner-container">
+                                                                    <label for="yearBirth">Năm sinh</label>
+                                                                    <input type="number" name="yearBirth"
+                                                                        id="yearBirth" min="1900" max="2004"
+                                                                        placeholder="Nhập năm sinh">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="w-full flex flex-col md:flex-row gap-8">
+                                                            <div class="w-full md:w-[45%] input-container">
+                                                                <div class="inner-container">
+                                                                    <label for="telNumber">Số điện thoại</label>
+                                                                    <input type="number" name="telNumber"
+                                                                        id="telNumber"
+                                                                        placeholder="Nhập số điện thoại">
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-full md:w-[55%] input-container">
+                                                                <div class="inner-container">
+                                                                    <label for="emailAddress">Email</label>
+                                                                    <input type="email" name="emailAddress"
+                                                                        id="emailAddress"
+                                                                        placeholder="Nhập địa chỉ email">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="w-full input-container">
+                                                                <div class="inner-container">
+                                                                    <label for="liveAddress">Địa chỉ</label>
+                                                                    <input type="text" name="liveAddress"
+                                                                        id="liveAddress"
+                                                                        placeholder="Nhập địa chỉ thường trú">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="-mt-[7px] xl:mt-2 w-full flex justify-center">
+                                                            <div
+                                                                class="outline-button color-outline pl-[10.2px] pr-[4.2px] py-[2.2px]">
+                                                                <button type="button"
+                                                                    class="outline-button bg-transparent py-3.5 pl-[55px] pr-[70px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                                    <div class="relative z-10">Mua vé</div>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elipse-blur-20"></div>
+                            <div class="elipse-blur-21"></div>
+
+                            <div class="line-background bg-line w-[462px] top-[200px] -left-[70px] md:hidden xl:bg-line-2 xl:block xl:top-[380px] xl:left-0"></div>
+                            <div class="line-background bg-line w-[463px] top-40 -right-60 md:hidden xl:block xl:top-[400px] xl:right-[50px]"></div>
+                            <div class="line-background bg-line w-[462px] top-[470px] -right-[120px] md:hidden xl:block xl:bg-line-2 xl:top-[790px] xl:left-[100px]"></div>
+
+                            <div class="line-background bg-line w-[463px] bottom-[250px] right-[100px] hidden xl:block xl:bg-line-2"></div>
+                            <div class="line-background bg-line-2 w-[305px] hidden top-[230px] left-[490px] xl:block"></div>
+                            <div class="line-background bg-line-2 w-[463px] hidden top-[470px] left-[435px] xl:block"></div>
+                            <div class="line-background bg-line-2 w-[283px] hidden top-[880px] left-[750px] xl:block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="pt-px bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+            <div class="w-full relative h-auto bg-background">
+                <div class="xl:max-w-7xl mx-auto relative overflow-x-hidden xl:overflow-x-visible">
+                    <div class="relative z-10 py-10 px-4 flex flex-col gap-6 text-white font-normal lg:px-2 2xl:px-0">
+                        <div class="pt-2.5 gap-8 flex flex-col items-start w-full max-w-[302px] md:max-w-[643px]">
+                            <div>
+                                <a href="./index.html"><img src="../img/header-footer/logo.png" alt=""
+                                        class="h-9 w-[182px] object-cover"></a>
+                            </div>
+                            <div class="w-full h-px bg-footer-line"></div>
+                        </div>
+                        <div class="flex flex-col gap-10 md:flex-row md:justify-between xl:gap-[255.2px]">
+                            <div class="flex flex-col gap-[34px]">
+                                <div>
+                                    <div class="text-body-3 font-bold">September 24,25 --- 2022</div>
+                                    <div class="text-body-2">Hồ Chí Minh</div>
+                                </div>
+                                <div class="text-title-3">02 ngày , 04 : 20 : 49</div>
+                            </div>
+                            <div class="flex flex-col gap-8 md:flex-row md:gap-[39px] xl:flex-1 xl:justify-between">
+                                <ul
+                                    class="text-body-2 flex gap-6 w-full justify-center md:justify-start md:items-center md:flex-col xl:max-w-[360px]">
+                                    <li><a href="./index.html#price-information">Thông tin giá vé</a></li>
+                                    <li><a href="./library.html">Thư viện</a></li>
+                                    <li><a href="./blog.html">Bài viết</a></li>
+                                    <li><a href="./contact.html">Liên hệ</a></li>
+                                </ul>
+                                <div class="w-full flex justify-center md:w-fit xl:pr-[60px]">
+                                    <div class="flex flex-col items-center gap-6 min-w-[300px]">
+                                        <form action="" class="flex flex-col gap-6">
+                                            <div
+                                                class="p-px bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+                                                <input type="email" name="sendEmail" id="sendEmail"
+                                                    placeholder="Nhập email của bạn" required
+                                                    class="placeholder:text-neutral-1-400 w-full p-[17px] bg-background outline-none border-none">
+                                            </div>
+                                            <div
+                                                class="p-px bg-gradient-180 from-gradient-1-start to-gradient-1-end group">
+                                                <button class="px-[75px] py-[17px] bg-transparent text-body-3 font-bold text-white group-hover:bg-background
+                                                transition-all duration-300 ease-out break-keep">Gửi đến chúng
+                                                    tôi</button>
+                                            </div>
+                                        </form>
+                                        <div class="py-2.5 flex gap-6 items-center justify-center">
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-ffacebook-fill hover:text-info-500">
+                                            </div>
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-instagram-line hover:text-warning-400">
+                                            </div>
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-music-line hover:text-info-400">
+                                            </div>
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-youtube-line hover:text-error-400">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elipse-blur-footer-1"></div>
+                    <div class="elipse-blur-footer-2"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

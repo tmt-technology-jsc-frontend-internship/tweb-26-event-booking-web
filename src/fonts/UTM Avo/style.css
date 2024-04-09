@@ -1,0 +1,32 @@
+/* font-weight: regular/400 */
+@font-face {
+  font-family: 'UTM Avo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('UTM Avo'), url("UTM Avo.ttf") format('truetype');
+}
+
+/* font-weight: bold/700 */
+@font-face {
+  font-family: 'UTM Avo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('UTM AvoBold'), url("UTM AvoBold.ttf") format('truetype');
+}
+
+/* font-weight: italic/400 */
+@font-face {
+  font-family: 'UTM Avo';
+  font-style: italic;
+  font-weight: 400;
+  src: local('UTM AvoItalic'), url("UTM AvoItalic.ttf") format('truetype');
+}
+
+/* font-weight: bold_italic/700 */
+@font-face {
+  font-family: 'UTM Avo';
+  font-style: italic;
+  font-weight: 700;
+  src: local('UTM AvoBold_Italic'), url("UTM AvoBold_Italic.ttf") format('truetype');
+}
+

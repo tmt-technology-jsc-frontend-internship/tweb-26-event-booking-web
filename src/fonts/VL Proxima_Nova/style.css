@@ -1,0 +1,15 @@
+/* font-weight: thin/100 */
+@font-face {
+  font-family: 'VL Proxima_Nova';
+  font-style: normal;
+  font-weight: 100;
+  src: local('VL_Mark Simonson - Proxima Nova Thin'), url("VL_Mark Simonson - Proxima Nova Thin.otf") format('truetype');
+}
+
+/* font-weight: bold/700 */
+@font-face {
+  font-family: 'VL Proxima_Nova';
+  font-style: normal;
+  font-weight: 700;
+  src: local('VL_Mark Simonson - Proxima Nova Bold'), url("VL_Mark Simonson - Proxima Nova Bold.otf") format('truetype');
+}

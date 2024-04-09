@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+</head>
+
+<body class="w-screen h-full overflow-x-hidden font-utm relative bg-background">
+    <!-- header trang chủ -->
+    <header>
+        <div class="w-full fixed top-0 z-50 bg-background">
+            <div class="relative mx-auto md:max-w-7xl">
+                <div class="py-3.5 px-4 w-full lg:px-2 2xl:px-0">
+                    <nav class="w-full flex items-center justify-between">
+                        <div>
+                            <a href="./index.html"><img src="../img/header-footer/logo.png" alt=""
+                                    class="h-9 w-[138px] object-contain"></a>
+                        </div>
+                        <ul
+                            class="absolute left-0 top-0 z-50 w-full min-h-screen pl-4 bg-background text-body-2 text-neutral-1-700 font-normal hidden flex-col gap-6 
+                        xl:gap-[34px] xl:pl-0 xl:pr-2.5 xl:w-auto xl:min-h-[62px] xl:flex-row xl:flex xl:items-center xl:static">
+                            <div class="w-full flex justify-end px-4 pt-3.5 xl:hidden">
+                                <div class="close-btn text-[40px] leading-10 text-neutral-2-300 cursor-pointer">&#10005;</div>
+                            </div>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./index.html"
+                                    class="w-full relative xl:text-center current-page">Trang chủ</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./event.html"
+                                    class="w-full relative xl:text-center">Sự kiện</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./library.html"
+                                    class="w-full relative xl:text-center">Thư viện</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./blog.html"
+                                    class="w-full relative xl:text-center">Bài viết</a></li>
+                            <li class="h-full flex items-center justify-center xl:w-[90px]"><a href="./contact.html"
+                                    class="w-full relative xl:text-center">Liên hệ</a></li>
+                            <li class="h-full flex items-center xl:hidden">
+                                <div class="login-btn outline-button color-outline pl-[10.2px] pr-[4.2px] py-[2.2px]">
+                                    <button type="button"
+                                        class="outline-button bg-transparent py-3.5 pl-[69px] pr-[68px] text-white text-body-3 font-bold font-vl"><span></span>
+                                        <div class="relative z-10">Đăng nhập</div>
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                        <div
+                            class="login-btn outline-button color-outline pl-[10.2px] pr-[4.2px] py-[2.2px] hidden xl:block">
+                            <button type="button"
+                                class="outline-button bg-transparent py-3.5 pl-[69px] pr-[68px] text-white text-body-3 font-bold font-vl"><span></span>
+                                <div class="relative z-10">Đăng nhập</div>
+                            </button>
+                        </div>
+                        <button type="button" class="toggle-btn twi-26-menu-fill relative z-20 cursor-pointer 
+                            text-neutral-2-300 rounded-lg w-auto h-auto text-[40px] leading-10 
+                            flex items-center justify-center xl:hidden">
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="w-full overflow-x-hidden">
+            <section>
+                <div class="w-full relative h-auto mt-[68px] xl:mt-[90px]">
+                    <div class=" w-full relative">
+                        <div class="w-full slider-banner flex flex-col gap-8">
+                            <img src="../img/header-footer/hero-banner-1.png" alt=""
+                                class="w-full aspect-hero-banner object-cover">
+                            <img src="../img/header-footer/hero-banner-2.png" alt=""
+                                class="w-full aspect-hero-banner object-cover">
+                            <img src="../img/header-footer/hero-banner-1.png" alt=""
+                                class="w-full aspect-hero-banner object-cover">
+                        </div>
+                        <div
+                            class="w-full absolute hidden left-0 md:top-[159px] md:px-4 md:flex md:items-center md:justify-between xl:top-1/2 xl:px-[4.2%]">
+                            <div class="slick-banner-prev p-3 rounded-[20px] bg-black/30 blur-[1px]">
+                                <div class="bg-arrow-right w-8 h-8 xl:w-[60px] xl:h-[60px] rotate-180"></div>
+                            </div>
+                            <div class="slick-banner-next p-3 rounded-[20px] bg-black/30 blur-[1px]">
+                                <div class="bg-arrow-right w-8 h-8 xl:w-[60px] xl:h-[60px]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="w-full flex flex-col pt-[60px] pb-20 xl:pt-20 xl:pb-[120px]">
+                    <section>
+                        <div class="w-full relative mx-auto xl:max-w-7xl">
+                            <div class="w-full px-4 flex flex-col gap-8 lg:px-2 xl:gap-10 2xl:px-0">
+                                <div class="w-full max-w-[614px] mx-auto flex flex-col gap-6 text-white">
+                                    <div class="w-full flex items-center justify-center gap-2">
+                                        <div><img src="../img/header-footer/logo-icon.png" alt=""></div>
+                                        <div data-before="Sự kiện trong tuần" class="layered-heading layered-down-2 pr-2">Sự kiện trong
+                                            tuần</div>
+                                    </div>
+                                    <div class="w-full text-body-2 text-center">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, eu malesuada
+                                        consectetur diam sit mauris.Diam, eu malesuada consectetur diam sit mauris.
+                                    </div>
+                                </div>
+                                <div class="w-full grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3 xl:gap-y-14">
+                                    <div class="blog-card flex flex-col gap-8">
+                                        <div class="img-container relative p-px">
+                                            <div class="w-full aspect-thumbnail px-[19px] py-[29px] bg-background relative z-[5]">
+                                                <img src="../img/home/binz-16-typh.png" alt=""
+                                                    class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="px-5 flex flex-col gap-3 text-white text-body-2">
+                                            <div class="blog-heading"><a href="./event_detail.html">Million Dollar Boy</a></div>
+                                            <div class="w-full flex justify-between">
+                                                <div>Monday</div>
+                                                <div>09:00 PM - 03:00 AM</div>
+                                            </div>
+                                            <div>16 Typh</div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card flex flex-col gap-8">
+                                        <div class="img-container relative p-px">
+                                            <div class="w-full aspect-thumbnail px-[19px] py-[29px] bg-background relative z-[5]">
+                                                <img src="../img/home/zion-live.png" alt=""
+                                                    class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="px-5 flex flex-col gap-3 text-white text-body-2">
+                                            <div class="blog-heading"><a href="./event_detail.html">Million Dollar Boy</a></div>
+                                            <div class="w-full flex justify-between">
+                                                <div>Sunday</div>
+                                                <div>09:00 PM - 03:00 AM</div>
+                                            </div>
+                                            <div>Văn Mai Hương</div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card flex flex-col gap-8">
+                                        <div class="img-container relative p-px">
+                                            <div class="w-full aspect-thumbnail px-[19px] py-[29px] bg-background relative z-[5]">
+                                                <img src="../img/home/purple-drink.png" alt=""
+                                                    class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="px-5 flex flex-col gap-3 text-white text-body-2">
+                                            <div class="blog-heading"><a href="./event_detail.html">Lux Sky Loungue</a></div>
+                                            <div class="w-full flex justify-between">
+                                                <div>Saturday</div>
+                                                <div>09:00 PM - 03:00 AM</div>
+                                            </div>
+                                            <div>16 Typh</div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card flex flex-col gap-8">
+                                        <div class="img-container relative p-px">
+                                            <div class="w-full aspect-thumbnail px-[19px] py-[29px] bg-background relative z-[5]">
+                                                <img src="../img/home/binz-16-typh.png" alt=""
+                                                    class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="px-5 flex flex-col gap-3 text-white text-body-2">
+                                            <div class="blog-heading"><a href="./event_detail.html">Million Dollar Boy</a></div>
+                                            <div class="w-full flex justify-between">
+                                                <div>Monday</div>
+                                                <div>09:00 PM - 03:00 AM</div>
+                                            </div>
+                                            <div>16 Typh</div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card flex flex-col gap-8">
+                                        <div class="img-container relative p-px">
+                                            <div class="w-full aspect-thumbnail px-[19px] py-[29px] bg-background relative z-[5]">
+                                                <img src="../img/home/zion-live.png" alt=""
+                                                    class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="px-5 flex flex-col gap-3 text-white text-body-2">
+                                            <div class="blog-heading"><a href="./event_detail.html">Million Dollar Boy</a></div>
+                                            <div class="w-full flex justify-between">
+                                                <div>Sunday</div>
+                                                <div>09:00 PM - 03:00 AM</div>
+                                            </div>
+                                            <div>Văn Mai Hương</div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card flex flex-col gap-8">
+                                        <div class="img-container relative p-px">
+                                            <div class="w-full aspect-thumbnail px-[19px] py-[29px] bg-background relative z-[5]">
+                                                <img src="../img/home/purple-drink.png" alt=""
+                                                    class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="px-5 flex flex-col gap-3 text-white text-body-2">
+                                            <div class="blog-heading"><a href="./event_detail.html">Lux Sky Loungue</a></div>
+                                            <div class="w-full flex justify-between">
+                                                <div>Saturday</div>
+                                                <div>09:00 PM - 03:00 AM</div>
+                                            </div>
+                                            <div>16 Typh</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="xl:mt-4 w-full flex justify-center">
+                                    <div class="outline-button color-outline pl-[9.2px] pr-[5.2px] py-[2.2px]">
+                                        <a href="./event.html">
+                                            <button type="button"
+                                                class="outline-button bg-transparent py-3.5 pl-[69px] pr-[68px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                <div class="relative z-10">Tất cả</div>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elipse-blur"></div>
+                        </div>
+                    </section>
+                    <div class="left-bar w-full mx-auto my-10 md:my-[60px] xl:my-20"><div></div></div>
+                    <section>
+                        <div class="w-full relative mx-auto xl:max-w-7xl">
+                            <div class="w-full px-4 flex flex-col gap-8 lg:px-2 xl:gap-10 2xl:px-0">
+                                <div class="w-full mx-auto flex flex-col gap-8 text-white md:gap-6">
+                                    <div class="w-full flex items-center justify-between">
+                                        <div class="flex items-center justify-center gap-2">
+                                            <div><img src="../img/header-footer/logo-icon.png" alt=""></div>
+                                                <div data-before="Thư viện ảnh"
+                                                class="layered-heading layered-down-2 short-underline space-underline pr-2">Thư viện
+                                                ảnh</div>
+                                        </div>
+                                        <div class="outline-button color-outline pl-[11.2px] pr-[3.2px] py-[2.2px] hidden md:block">
+                                            <a href="./library.html">
+                                                <button type="button"
+                                                    class="outline-button bg-transparent py-3 pl-[53px] pr-8 text-white text-body-3 font-bold font-vl">
+                                                    <span></span>
+                                                    <div class="relative z-10 flex gap-2 items-center">Tất cả
+                                                        <div class="bg-chevron-next w-6 h-6"></div>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="w-full max-w-[614px] mx-auto flex flex-col gap-6">
+                                        <div class="font-vl font-bold text-title-3 text-center w-full">Lux Sky Loungue
+                                        </div>
+                                        <div class="w-full text-body-2 text-center">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, eu malesuada
+                                            consectetur diam sit mauris.Diam, eu malesuada consectetur diam sit
+                                            mauris.Lorem ipsum dolor sit amet, consectetur adpiscing elit.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
+                                    <div class="blog-card-2">
+                                        <div class="img-container-2 relative">
+                                            <div class="w-full md:px-[17px] md:py-[17px] bg-background relative z-[5]">
+                                                <div class="w-full aspect-thumbnail">
+                                                    <a href="./library_detail.html" class="w-full relative">
+                                                        <img src="../img/home/red-bar-0.png" alt=""
+                                                            class="w-full h-full object-cover relative">
+                                                        <div class="bg-content-2">
+                                                            <div
+                                                                class="h-full text-white flex flex-col gap-3 justify-end p-4 md:p-5 xl:p-4">
+                                                                <div class="text-title-3 font-vl font-bold"><span
+                                                                        class="italic">#</span>Kasho</div>
+                                                                <div class="text-body-1">22/08/2022</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card-2">
+                                        <div class="img-container-2 relative">
+                                            <div class="w-full md:px-[17px] md:py-[17px] bg-background relative z-[5]">
+                                                <div class="w-full aspect-thumbnail">
+                                                    <a href="./library_detail.html" class="w-full relative">
+                                                        <img src="../img/home/red-bar-0.png" alt=""
+                                                            class="w-full h-full object-cover relative">
+                                                        <div class="bg-content-2">
+                                                            <div
+                                                                class="h-full text-white flex flex-col gap-3 justify-end p-4 md:p-5 xl:p-4">
+                                                                <div class="text-title-3 font-vl font-bold"><span
+                                                                        class="italic">#</span>Kasho</div>
+                                                                <div class="text-body-1">22/08/2022</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card-2">
+                                        <div class="img-container-2 relative">
+                                            <div class="w-full md:px-[17px] md:py-[17px] bg-background relative z-[5]">
+                                                <div class="w-full aspect-thumbnail">
+                                                    <a href="./library_detail.html" class="w-full relative">
+                                                        <img src="../img/home/red-bar-0.png" alt=""
+                                                            class="w-full h-full object-cover relative">
+                                                        <div class="bg-content-2">
+                                                            <div
+                                                                class="h-full text-white flex flex-col gap-3 justify-end p-4 md:p-5 xl:p-4">
+                                                                <div class="text-title-3 font-vl font-bold"><span
+                                                                        class="italic">#</span>Kasho</div>
+                                                                <div class="text-body-1">22/08/2022</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card-2">
+                                        <div class="img-container-2 relative">
+                                            <div class="w-full md:px-[17px] md:py-[17px] bg-background relative z-[5]">
+                                                <div class="w-full aspect-thumbnail">
+                                                    <a href="./library_detail.html" class="w-full relative">
+                                                        <img src="../img/home/red-bar-0.png" alt=""
+                                                            class="w-full h-full object-cover relative">
+                                                        <div class="bg-content-2">
+                                                            <div
+                                                                class="h-full text-white flex flex-col gap-3 justify-end p-4 md:p-5 xl:p-4">
+                                                                <div class="text-title-3 font-vl font-bold"><span
+                                                                        class="italic">#</span>Kasho</div>
+                                                                <div class="text-body-1">22/08/2022</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card-2">
+                                        <div class="img-container-2 relative">
+                                            <div class="w-full md:px-[17px] md:py-[17px] bg-background relative z-[5]">
+                                                <div class="w-full aspect-thumbnail">
+                                                    <a href="./library_detail.html" class="w-full relative">
+                                                        <img src="../img/home/red-bar-0.png" alt=""
+                                                            class="w-full h-full object-cover relative">
+                                                        <div class="bg-content-2">
+                                                            <div
+                                                                class="h-full text-white flex flex-col gap-3 justify-end p-4 md:p-5 xl:p-4">
+                                                                <div class="text-title-3 font-vl font-bold"><span
+                                                                        class="italic">#</span>Kasho</div>
+                                                                <div class="text-body-1">22/08/2022</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card-2">
+                                        <div class="img-container-2 relative">
+                                            <div class="w-full md:px-[17px] md:py-[17px] bg-background relative z-[5]">
+                                                <div class="w-full aspect-thumbnail">
+                                                    <a href="./library_detail.html" class="w-full relative">
+                                                        <img src="../img/home/red-bar-0.png" alt=""
+                                                            class="w-full h-full object-cover relative">
+                                                        <div class="bg-content-2">
+                                                            <div
+                                                                class="h-full text-white flex flex-col gap-3 justify-end p-4 md:p-5 xl:p-4">
+                                                                <div class="text-title-3 font-vl font-bold"><span
+                                                                        class="italic">#</span>Kasho</div>
+                                                                <div class="text-body-1">22/08/2022</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="xl:mt-4 w-full flex justify-center md:hidden">
+                                    <div class="outline-button color-outline pl-[9.2px] pr-[5.2px] py-[2.2px]">
+                                        <a href="./library.html">
+                                            <button type="button"
+                                                class="outline-button bg-transparent py-3.5 pl-[69px] pr-[68px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                <div class="relative z-10">Tất cả</div>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elipse-blur-2"></div>
+                        </div>
+                    </section>
+                    <div class="right-bar w-full mx-auto my-[35px] md:my-[60px] xl:my-20"><div></div></div>
+                    <section>
+                        <div class="w-full relative mx-auto xl:max-w-7xl">
+                            <div class="w-full px-4 flex flex-col gap-8 lg:px-2 xl:gap-10 xl:pb-[21px] 2xl:px-0">
+                                <div class="w-full mx-auto flex flex-col gap-8 text-white md:gap-6 md:py-2.5">
+                                    <div class="w-full flex items-center justify-between">
+                                        <div class="flex items-center justify-center gap-2">
+                                            <div><img src="../img/header-footer/logo-icon.png" alt=""></div>
+                                            <div data-before="Bài viết" class="layered-heading layered-down pr-2">Bài
+                                                viết</div>
+                                        </div>
+                                        <div
+                                            class="outline-button color-outline pl-[11.2px] pr-[3.2px] py-[2.2px] hidden md:block">
+                                            <a href="./blog.html">
+                                                <button type="button"
+                                                    class="outline-button bg-transparent pt-3 pb-4 pl-[53px] pr-8 text-white text-body-3 font-bold font-vl">
+                                                    <span></span>
+                                                    <div class="relative z-10 flex gap-2 items-center">Xem thêm</div>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
+                                    <div class="blog-card-3">
+                                        <div class="card-outline">
+                                            <div class="inner-bg">
+                                                <div class="img-container">
+                                                    <div class="w-full aspect-thumbnail">
+                                                        <img src="../img/home/soobin-0.png" alt=""
+                                                            class="w-full h-full object-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="text-white flex flex-col gap-[5px] xl:gap-4">
+                                                    <div class="text-body-3 font-vl font-bold text-center">Zion Sky
+                                                        Lounge & Dining: Nhà hàng triệu đô view "đỉnh của chóp" xuất
+                                                        hiện trong MV của Soobin và Binz</div>
+                                                    <div class="text-body-2">Thực đơn kết hợp ẩm thực Á - Âu cùng hương
+                                                        vị đồ uống đỉnh cao đến từ đội ngũ đầu bếp và bartender hàng đầu
+                                                        cũng là điểm nhấn quan trọng của địa điểm mới này. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="outline-button color-outline pl-[9px] pr-[5px] py-[2px]">
+                                            <a href="./blog_detail.html">
+                                                <button type="button"
+                                                    class="outline-button bg-transparent py-3.5 pl-[51px] pr-[50px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                    <div class="relative z-10">Xem thêm</div>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card-3">
+                                        <div class="card-outline">
+                                            <div class="inner-bg">
+                                                <div class="img-container">
+                                                    <div class="w-full aspect-thumbnail">
+                                                        <img src="../img/home/soobin-1.png" alt=""
+                                                            class="w-full h-full object-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="text-white flex flex-col gap-[5px] xl:gap-4">
+                                                    <div class="text-body-3 font-vl font-bold text-center">Zion Sky
+                                                        Lounge & Dining: Nhà hàng triệu đô view "đỉnh của chóp" xuất
+                                                        hiện trong MV của Soobin và Binz</div>
+                                                    <div class="text-body-2">Thực đơn kết hợp ẩm thực Á - Âu cùng hương
+                                                        vị đồ uống đỉnh cao đến từ đội ngũ đầu bếp và bartender hàng đầu
+                                                        cũng là điểm nhấn quan trọng của địa điểm mới này. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="outline-button color-outline pl-[9px] pr-[5px] py-[2px]">
+                                            <a href="./blog_detail.html">
+                                                <button type="button"
+                                                    class="outline-button bg-transparent py-3.5 pl-[51px] pr-[50px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                    <div class="relative z-10">Xem thêm</div>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-card-3">
+                                        <div class="card-outline">
+                                            <div class="inner-bg">
+                                                <div class="img-container">
+                                                    <div class="w-full aspect-thumbnail">
+                                                        <img src="../img/home/soobin-0.png" alt=""
+                                                            class="w-full h-full object-cover">
+                                                    </div>
+                                                </div>
+                                                <div class="text-white flex flex-col gap-[5px] xl:gap-4">
+                                                    <div class="text-body-3 font-vl font-bold text-center">Zion Sky
+                                                        Lounge & Dining: Nhà hàng triệu đô view "đỉnh của chóp" xuất
+                                                        hiện trong MV của Soobin và Binz</div>
+                                                    <div class="text-body-2">Thực đơn kết hợp ẩm thực Á - Âu cùng hương
+                                                        vị đồ uống đỉnh cao đến từ đội ngũ đầu bếp và bartender hàng đầu
+                                                        cũng là điểm nhấn quan trọng của địa điểm mới này. </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="outline-button color-outline pl-[9px] pr-[5px] py-[2px]">
+                                            <a href="./blog_detail.html">
+                                                <button type="button"
+                                                    class="outline-button bg-transparent py-3.5 pl-[51px] pr-[50px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                    <div class="relative z-10">Xem thêm</div>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="xl:mt-4 w-full flex justify-center md:hidden">
+                                    <div class="outline-button color-outline pl-[9.2px] pr-[5.2px] py-[2.2px]">
+                                        <a href="./blog.html">
+                                            <button type="button"
+                                                class="outline-button bg-transparent py-3.5 pl-[69px] pr-[68px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                <div class="relative z-10">Tất cả</div>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elipse-blur-3"></div>
+                        </div>
+                    </section>
+                    <div class="left-bar w-full mx-auto mt-10 md:mt-[60px] xl:mt-20"><div></div></div>
+                    <section id="price-information">
+                        <div class="w-full relative mx-auto bg-ticket-info bg-cover bg-center bg-no-repeat">
+                            <div class="relative w-full h-full z-20 bg-r-gradient from-background/70 to-background">
+                                <div class="w-full mx-auto xl:max-w-7xl">
+                                    <div
+                                        class="w-full px-4 pt-10 pb-[30px] flex flex-col gap-8 md:py-[60px] lg:px-2 xl:py-20 xl:gap-10 2xl:px-0">
+                                        <div
+                                            class="w-full max-w-[628px] mx-auto flex flex-col gap-6 text-white xl:gap-4">
+                                            <div class="w-full flex items-center justify-center gap-2">
+                                                <div><img src="../img/header-footer/logo-icon.png" alt=""></div>
+                                                <div data-before="Thông tin giá vé"
+                                                    class="layered-heading layered-down-3 long-underline space-underline pr-2">
+                                                    Thông tin giá vé</div>
+                                            </div>
+                                            <div class="w-full text-body-2 text-center">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, eu
+                                                malesuada consectetur diam sit mauris.Diam, eu malesuada consectetur
+                                                diam sit
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="w-full grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 xl:grid-cols-3">
+                                            <div class="ticket-card-container">
+                                                <div class="ticket-info-card custom-left-card">
+                                                    <div class="inner-card custom-left-card">
+                                                        <div class="type text-title-6">Basic</div>
+                                                        <div class="text-heading-5 mt-4">500.000 VNĐ</div>
+                                                        <div class="bar"></div>
+                                                        <div class="flex flex-col gap-6">
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">2 x CHAMPAGNE</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">1 x WHISKY</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">10 x HEINEKEN</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">2 x MONSTER</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ticket-card-container">
+                                                <div class="ticket-info-card custom-middle-card">
+                                                    <div class="inner-card custom-middle-card">
+                                                        <div class="type text-title-6">Basic</div>
+                                                        <div class="text-heading-5 mt-4">500.000 VNĐ</div>
+                                                        <div class="bar"></div>
+                                                        <div class="flex flex-col gap-6">
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">2 x CHAMPAGNE</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">1 x WHISKY</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">10 x HEINEKEN</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">2 x MONSTER</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ticket-card-container">
+                                                <div class="ticket-info-card custom-right-card">
+                                                    <div class="inner-card custom-right-card">
+                                                        <div class="type text-title-6">Basic</div>
+                                                        <div class="text-heading-5 mt-4">500.000 VNĐ</div>
+                                                        <div class="bar"></div>
+                                                        <div class="flex flex-col gap-6">
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">2 x CHAMPAGNE</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">1 x WHISKY</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">10 x HEINEKEN</div>
+                                                            </div>
+                                                            <div class="flex gap-6 items-center">
+                                                                <div class="item-container">
+                                                                    <div class="item twi-26-arrow-down-fill"></div>
+                                                                </div>
+                                                                <div class="text-title-3">2 x MONSTER</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="w-full relative mx-auto xl:max-w-[1920px]">
+                            <div class="relative w-full h-full z-20">
+                                <div class="w-full mx-auto xl:max-w-7xl">
+                                    <div
+                                        class="w-full px-4 pt-[30px] pb-[60px] flex flex-col items-center gap-8 md:pt-[60px] md:gap-10 lg:px-2 xl:flex-row xl:py-20 xl:gap-16 2xl:px-0">
+                                        <div class="w-full text-white md:pb-[45px] md:pt-[30px] xl:pt-0 xl:pb-[60px]">
+                                            <div class="w-fit mx-auto flex flex-col gap-10 text-white relative">
+                                                <div class="w-full flex items-center justify-center relative">
+                                                    <div data-before="Thời gian sự kiện sắp xảy ra" class="layered-heading layered-down-4 layered-no-underline 
+                                                    pr-2 text-center">Thời gian sự kiện <br class="md:hidden">sắp <br
+                                                            class="hidden md:block">xảy ra</div>
+                                                </div>
+                                                <div class="font-vl flex flex-col items-center gap-6 md:flex-row relative">
+                                                    <div class="w-full flex items-center justify-center md:w-fit">
+                                                        <div class="flex flex-col gap-6 items-center">
+                                                            <div class="text-title-3 font-bold text-center">Ngày</div>
+                                                            <div id="dayEvent"
+                                                                class="time-card text-heading-4 font-bold">02</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex gap-6">
+                                                        <div class="flex flex-col gap-6 items-center">
+                                                            <div class="text-title-3 font-bold text-center">Giờ</div>
+                                                            <div id="hourEvent"
+                                                                class="time-card text-heading-4 font-bold">04</div>
+                                                        </div>
+                                                        <div class="flex flex-col gap-6 items-center">
+                                                            <div class="text-title-3 font-bold text-center">Phút</div>
+                                                            <div id="minuteEvent"
+                                                                class="time-card text-heading-4 font-bold">20</div>
+                                                        </div>
+                                                        <div class="flex flex-col gap-6 items-center">
+                                                            <div class="text-title-3 font-bold text-center">Giây</div>
+                                                            <div id="secondEvent"
+                                                                class="time-card text-heading-4 font-bold">49</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="absolute -top-[5px] -left-20 md:-left-20 md:-top-8 -z-10"><img src="../img/header-footer/dots.png" alt=""></div>
+                                                <div class="absolute -bottom-12 -right-[90px] md:-right-[75px] -z-20"><img src="../img/header-footer/dots.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full relative mt-7 px-0 md:mt-0 md:px-[77px] xl:px-0">
+                                            <div class="absolute w-full z-40 top-0
+                                            left-1/2 -translate-x-1/2 px-8">
+                                                <div class="aspect-dj-form relative w-full h-full overflow-hidden mx-auto max-w-[431px]">
+                                                    <div class="aspect-dj-form-inner relative w-full">
+                                                        <img src="../img/home/dj-contact.png" alt=""
+                                                            class="dj-img w-full h-full object-contain absolute top-0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="drop-shadow-[0_0_15px_rgba(255,255,255,.1)]">
+                                                <div class="custom-form-background form-outline relative z-0 mx-auto w-full max-w-[628px] xl:min-w-[628px]">
+                                                    <div class="custom-form-background ticket-form-out text-white">
+                                                        <div class="color-outline-form">
+                                                            <div class="w-full flex items-start justify-center gap-2.5 p-2.5 bg-background rounded">
+                                                                <div class="w-[32px] md:w-10">
+                                                                    <img src="../img/header-footer/logo-icon.png"
+                                                                        alt="" class="w-full"></div>
+                                                                <div class="font-vl font-bold text-title-3 md:text-title-6 text-center pr-5">
+                                                                    Thông tin đăng kí vé <br>tại đây
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <form action="" class="custom-form-background ticket-form-in">
+                                                            <div class="w-full flex flex-col md:flex-row gap-8">
+                                                                <div class="w-full md:w-[45%] input-container">
+                                                                    <div class="inner-container">
+                                                                        <label for="fullName">Họ & tên</label>
+                                                                        <input type="text" name="fullName" id="fullname"
+                                                                            placeholder="Nhập họ và tên">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="w-full md:w-[55%] input-container">
+                                                                    <div class="inner-container">
+                                                                        <label for="yearBirth">Năm sinh</label>
+                                                                        <input type="number" name="yearBirth"
+                                                                            id="yearBirth" min="1900" max="2004"
+                                                                            placeholder="Nhập năm sinh">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="w-full flex flex-col md:flex-row gap-8">
+                                                                <div class="w-full md:w-[45%] input-container">
+                                                                    <div class="inner-container">
+                                                                        <label for="telNumber">Số điện thoại</label>
+                                                                        <input type="number" name="telNumber"
+                                                                            id="telNumber"
+                                                                            placeholder="Nhập số điện thoại">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="w-full md:w-[55%] input-container">
+                                                                    <div class="inner-container">
+                                                                        <label for="emailAddress">Email</label>
+                                                                        <input type="email" name="emailAddress"
+                                                                            id="emailAddress"
+                                                                            placeholder="Nhập địa chỉ email">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="w-full input-container">
+                                                                    <div class="inner-container">
+                                                                        <label for="liveAddress">Địa chỉ</label>
+                                                                        <input type="text" name="liveAddress"
+                                                                            id="liveAddress"
+                                                                            placeholder="Nhập địa chỉ thường trú">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="-mt-[7px] xl:mt-2 w-full flex justify-center">
+                                                                <div
+                                                                    class="outline-button color-outline pl-[10.2px] pr-[4.2px] py-[2.2px]">
+                                                                    <button type="button"
+                                                                        class="outline-button bg-transparent py-3.5 pl-[55px] pr-[70px] text-white text-body-3 font-bold font-vl"><span></span>
+                                                                        <div class="relative z-10">Mua vé</div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elipse-blur-4"></div>
+                                <div class="line-background bg-line w-[462px] top-[600px] -right-[250px] md:right-auto md:top-[900px] md:left-[430px] xl:top-[380px] xl:left-0"></div>
+                                <div class="line-background bg-line w-[463px] bottom-[690px] -left-[250px] md:bottom-[200px] md:-left-[150px] xl:bottom-auto xl:top-[530px] xl:left-[1300px]"></div>
+                                <div class="line-background bg-line w-[462px] bottom-[550px] -left-[80px] md:-bottom-[150px] md:left-[280px] xl:bg-line-2 xl:bottom-auto xl:top-[610px] xl:left-[200px]"></div>
+                                <div class="line-background bg-line w-[463px] bottom-[700px] -right-[300px] md:right-auto md:-bottom-[100px] md:left-[580px] xl:bg-line-2 xl:bottom-auto xl:top-[850px] xl:left-[300px]"></div>
+                                <div class="line-background bg-line-2 w-[150px] hidden xl:block xl:top-[300px] xl:left-[550px]"></div>
+                                <div class="line-background bg-line-2 w-[270px] hidden xl:block xl:top-[490px] xl:left-[650px]"></div>
+                                <div class="line-background bg-line-2 w-[283px] hidden xl:block xl:top-[790px] xl:left-[830px]"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="w-full relative mx-auto xl:max-w-7xl">
+                            <div class="w-full px-4 flex flex-col gap-8 md:gap-[60px] lg:px-2 xl:gap-10 2xl:px-0">
+                                <div class="w-full flex flex-col items-center gap-6 text-white md:gap-4">
+                                    <div class="w-full flex items-center justify-center gap-2 p-2.5">
+                                        <div><img src="../img/header-footer/logo-icon.png" alt=""></div>
+                                        <div data-before="Nhà đồng hành cùng sự kiện" class="layered-heading layered-down-5 layered-no-underline md:text-5xl md:leading-[48px] pr-2">Nhà đồng hành cùng sự kiện</div>
+                                    </div>
+                                    <div class="w-full text-body-2 text-center max-w-[628px]">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, eu malesuada
+                                        consectetur diam sit mauris.Diam, eu malesuada consectetur diam sit.
+                                    </div>
+                                </div>
+                                <div class="w-fit mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-4 relative z-30">
+                                    <div class="hover:drop-shadow-[0_0_10px_rgba(255,255,255,.3)] max-w-[290px]">
+                                        <div class="custom-left-card-2 p-[3px] bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+                                            <div class="aspect-square custom-left-card-2">
+                                                <img src="../img/home/kasho.png" alt="" class="w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hover:drop-shadow-[0_0_10px_rgba(255,255,255,.3)] max-w-[290px]">
+                                        <div class="custom-left-card-2 p-[3px] bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+                                            <div class="aspect-square custom-left-card-2">
+                                                <img src="../img/home/atmos.png" alt="" class="w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hover:drop-shadow-[0_0_10px_rgba(255,255,255,.3)] max-w-[290px]">
+                                        <div class="custom-left-card-2 p-[3px] bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+                                            <div class="aspect-square custom-left-card-2">
+                                                <img src="../img/home/botu.png" alt="" class="w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hover:drop-shadow-[0_0_10px_rgba(255,255,255,.3)] max-w-[290px]">
+                                        <div class="custom-left-card-2 p-[3px] bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+                                            <div class="aspect-square custom-left-card-2">
+                                                <img src="../img/home/91.png" alt="" class="w-full h-full object-cover object-center">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elipse-blur-5"></div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="pt-px bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+            <div class="w-full relative h-auto bg-background">
+                <div class="xl:max-w-7xl mx-auto relative overflow-x-hidden xl:overflow-x-visible">
+                    <div class="relative z-10 py-10 px-4 flex flex-col gap-6 text-white font-normal lg:px-2 2xl:px-0">
+                        <div class="pt-2.5 gap-8 flex flex-col items-start w-full max-w-[302px] md:max-w-[643px]">
+                            <div>
+                                <a href="./index.html"><img src="../img/header-footer/logo.png" alt=""
+                                        class="h-9 w-[182px] object-cover"></a>
+                            </div>
+                            <div class="w-full h-px bg-footer-line"></div>
+                        </div>
+                        <div class="flex flex-col gap-10 md:flex-row md:justify-between xl:gap-[255.2px]">
+                            <div class="flex flex-col gap-[34px]">
+                                <div>
+                                    <div class="text-body-3 font-bold">September 24,25 --- 2022</div>
+                                    <div class="text-body-2">Hồ Chí Minh</div>
+                                </div>
+                                <div class="text-title-3">02 ngày , 04 : 20 : 49</div>
+                            </div>
+                            <div class="flex flex-col gap-8 md:flex-row md:gap-[39px] xl:flex-1 xl:justify-between">
+                                <ul
+                                    class="text-body-2 flex gap-6 w-full justify-center md:justify-start md:items-center md:flex-col xl:max-w-[360px]">
+                                    <li><a href="#price-information">Thông tin giá vé</a></li>
+                                    <li><a href="./library.html">Thư viện</a></li>
+                                    <li><a href="./blog.html">Bài viết</a></li>
+                                    <li><a href="./contact.html">Liên hệ</a></li>
+                                </ul>
+                                <div class="w-full flex justify-center md:w-fit xl:pr-[60px]">
+                                    <div class="flex flex-col items-center gap-6 min-w-[300px]">
+                                        <form action="" class="flex flex-col gap-6">
+                                            <div
+                                                class="p-px bg-gradient-180 from-gradient-1-start to-gradient-1-end">
+                                                <input type="email" name="sendEmail" id="sendEmail"
+                                                    placeholder="Nhập email của bạn" required
+                                                    class="placeholder:text-neutral-1-400 w-full p-[17px] bg-background outline-none border-none">
+                                            </div>
+                                            <div
+                                                class="p-px bg-gradient-180 from-gradient-1-start to-gradient-1-end group">
+                                                <button class="px-[75px] py-[17px] bg-transparent text-body-3 font-bold text-white group-hover:bg-background
+                                                transition-all duration-300 ease-out break-keep">Gửi đến chúng
+                                                    tôi</button>
+                                            </div>
+                                        </form>
+                                        <div class="py-2.5 flex gap-6 items-center justify-center">
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-ffacebook-fill hover:text-info-500">
+                                            </div>
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-instagram-line hover:text-warning-400">
+                                            </div>
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-music-line hover:text-info-400">
+                                            </div>
+                                            <div
+                                                class="text-[#4D4D4D] text-[28px] leading-7 cursor-pointer twi-26-youtube-line hover:text-error-400">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elipse-blur-footer-1"></div>
+                    <div class="elipse-blur-footer-2"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
